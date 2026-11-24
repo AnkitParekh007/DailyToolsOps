@@ -1,0 +1,2 @@
+# Resource website
+Build locally with `python3 scripts/build_site.py _site`, then `python3 -m http.server 8000 --directory _site` and open http://localhost:8000. Choose a fresh output folder on subsequent builds. GitHub Pages source must be GitHub Actions. Deployment runs on main after tests. Every build creates individual ZIPs and a full bundle with checksums. No third-party runtime dependencies. The instructions links refer to the current main branch; extracted archives contain the matching instructions.
