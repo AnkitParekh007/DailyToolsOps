@@ -1,0 +1,2 @@
+import React from 'react';import {Link} from 'react-router-dom';import {REPO} from '../data/site';
+export function Footer({docs}){return <footer className="shell footer"><span>DailyToolsOps · {docs?'Documentation':'Engineering resources'}</span>{docs?<><Link to="/#catalog">Resource catalog</Link><a href={REPO} rel="noopener noreferrer">GitHub ↗</a></>:<><a href={REPO} rel="noopener noreferrer">Source repository ↗</a><Link to="/docs/">Documentation ↗</Link></>}</footer>;}

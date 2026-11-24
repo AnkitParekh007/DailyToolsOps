@@ -54,3 +54,7 @@ ZIP and checksum are generated locally. Review code before executing. [Roadmap](
 ## Project roadmap and contributions
 
 Explore the [resource expansion roadmap](docs/ROADMAP.md), browse [open issues](https://github.com/AnkitParekh007/DailyToolsOps/issues), or request a new pack using the issue templates. The catalog currently includes guided templates; executable utilities are tracked separately in the roadmap.
+
+## React website
+
+The Vite + React migration lives in [web-react/](web-react/README.md). See its README for local development, build, Pages deployment, SEO configuration and adding new pages. The original static site remains in `website/` for rollback and parity tests.

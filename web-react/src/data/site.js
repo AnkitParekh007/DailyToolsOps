@@ -1,0 +1,13 @@
+import data from './generated.json';
+export const BASE='/DailyToolsOps/';
+export const ORIGIN='https://ankitparekh007.github.io';
+export const REPO='https://github.com/AnkitParekh007/DailyToolsOps';
+export const packs=data.packs;
+export const guides=data.guides;
+export const labels={"foundations":"Foundations","ai-engineering":"AI engineering","development":"Development","quality-security":"Quality & security","devops":"DevOps","productivity":"Productivity","frameworks":"Frameworks"};
+export const title=id=>id.split('-').map(s=>({ai:'AI',ui:'UI',ux:'UX',mcp:'MCP',rag:'RAG',llm:'LLM',ci:'CI',cd:'CD',api:'API',nextjs:'Next.js',nodejs:'Node.js',swiftui:'SwiftUI',fastapi:'FastAPI',postgresql:'PostgreSQL',github:'GitHub'}[s]||s[0].toUpperCase()+s.slice(1))).join(' ');
+export const groups=Object.groupBy ? Object.groupBy(packs,p=>p.category) : packs.reduce((o,p)=>((o[p.category]??=[]).push(p),o),{});
+export const asset=path=>BASE+path.replace(/^\//,'');
+export const packDownload=p=>asset('downloads/'+p.id+'-'+p.version+'.zip');
+export const normalize=path=>path==='/'?'/':path.replace(/\/+$/,'')+'/';
+export const routes=['/',...Object.keys(guides)];

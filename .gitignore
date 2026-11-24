@@ -3,3 +3,12 @@ __pycache__/
 *.pyc
 *.zip
 *.zip.sha256
+
+web-react/node_modules/
+web-react/dist/
+web-react/.ssr/
+web-react/src/data/generated.json
+web-react/public/downloads/
+web-react/public/catalog.json
+web-react/public/.nojekyll
+web-react/public/social.png
