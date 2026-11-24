@@ -1,0 +1,13 @@
+{
+  "id": "vendor-independent-harness",
+  "version": "1.0.0",
+  "category": "foundations",
+  "description": "Portable engineering contract and verification",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/vendor-independent-harness"
+}
