@@ -1,0 +1,27 @@
+name: Resource pack request
+description: Propose a useful new engineering resource
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Engineering problem
+      description: What recurring task should this pack solve?
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Proposed artifacts and worked example
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and tests
+    validations:
+      required: true
+  - type: input
+    id: tools
+    attributes:
+      label: Target coding tools and frameworks
