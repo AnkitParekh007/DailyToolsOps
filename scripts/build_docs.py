@@ -27,7 +27,7 @@ def inline(text,links):
         pos=m.end()
     return "".join(parts)+escape(text[pos:])
 
-def markdown(source,links=None):
+def markdown(source,links=None,source_name="<markdown>"):
     lines=source.splitlines(); html=[]; toc=[]; seen={}; i=0
     def fmt(s): return inline(s,links or {})
     def boundary(s): return not s.strip() or re.match(r"^(#{1,6} |\s*```|\s*[-*] |\s*\d+\. |>|\|)",s)
@@ -35,10 +35,10 @@ def markdown(source,links=None):
         line=lines[i].strip()
         if not line: i+=1; continue
         if line.startswith("```"):
-            lang=line[3:].strip() or "text"; code=[]; i+=1
+            opening_line=i+1; lang=line[3:].strip() or "text"; code=[]; i+=1
             while i<len(lines) and not lines[i].strip().startswith("```"):
                 code.append(lines[i]); i+=1
-            if i==len(lines): raise ValueError("Unclosed code fence")
+            if i==len(lines): raise ValueError(f"{source_name}:{opening_line}: Unclosed code fence")
             html.append('<div class="code-wrap"><div class="code-bar"><span>'+escape(lang)+'</span><button type="button" class="copy-code" aria-label="Copy code">Copy</button></div><pre><code>'+escape("\n".join(code))+'</code></pre></div>')
         elif re.match(r"^#{1,6} ",line):
             prefix,heading=line.split(" ",1)
@@ -113,7 +113,7 @@ def build_docs(root,out,packs):
             slug=extra.stem.lower()
             if extra.name not in ("README.md","INSTRUCTIONS.md") and re.fullmatch(r"[a-z0-9-]+",slug):
                 links[extra.name]=slug+"/"; extras.append((extra,slug))
-        body,toc=markdown((folder/"INSTRUCTIONS.md").read_text(encoding="utf-8"),links)
+        body,toc=markdown((folder/"INSTRUCTIONS.md").read_text(encoding="utf-8"),links,str(folder/"INSTRUCTIONS.md"))
         intro='<p class="eyebrow">PACK GUIDE</p><h1>'+escape(name)+'</h1><p class="doc-lede">'+escape(p["description"])+'</p><div class="doc-meta"><span class="tag">v'+escape(p["version"])+'</span><span>'+escape(LABELS.get(p["category"],p["category"]))+'</span></div><div class="doc-actions"><a class="primary" href="'+download+'" download>Download ZIP</a><a class="secondary" href="'+download+'.sha256" download>SHA-256</a></div>'
         prev=packs[i-1] if i else None; nxt=packs[i+1] if i+1<len(packs) else None
         pagination='<div class="docs-pagination">'+(('<a href="../'+prev["id"]+'/"><small>← Previous</small>'+escape(title(prev["id"]))+'</a>') if prev else '<a href="../"><small>← Previous</small>Getting started</a>')+(('<a href="../'+nxt["id"]+'/"><small>Next →</small>'+escape(title(nxt["id"]))+'</a>') if nxt else '<a href="../"><small>Next →</small>All guides</a>')+'</div>'
@@ -121,5 +121,5 @@ def build_docs(root,out,packs):
         page(docs/key,name,key,prefix,intro+'<div class="doc-body">'+body+'</div>'+pagination,crumb,toc)
         for extra,slug in extras:
             extra_links={k:("../" if v=="./" else "../"+v) for k,v in links.items()}
-            extra_body,extra_toc=markdown(extra.read_text(encoding="utf-8"),extra_links)
+            extra_body,extra_toc=markdown(extra.read_text(encoding="utf-8"),extra_links,str(extra))
             page(docs/key/slug,title(slug),key,"../../../",'<h1>'+escape(title(slug))+'</h1><p><a href="../">← Back to pack instructions</a></p><div class="doc-body">'+extra_body+'</div>','<a href="../../">Documentation</a><span>/</span><a href="../">'+escape(name)+'</a>',extra_toc)

@@ -23,10 +23,13 @@ class DocsTests(unittest.TestCase):
         self.assertNotIn('href="javascript:',html)
         self.assertIn("&lt;evil&gt;",html)
         self.assertEqual(toc,[("heading","Heading")])
+    def test_malformed_fence_reports_source(self):
+        with self.assertRaisesRegex(ValueError, r"pack/INSTRUCTIONS\.md:2: Unclosed code fence"):
+            markdown("## Install\n```sh\npython3 install.py\n``\n", source_name="pack/INSTRUCTIONS.md")
     def test_docs_and_links(self):
         with tempfile.TemporaryDirectory() as tmp:
             out=Path(tmp)/"site"
-            subprocess.run([sys.executable,str(ROOT/"scripts/build_site.py"),str(out)],check=True,capture_output=True)
+            subprocess.run([sys.executable,str(ROOT/"scripts/build_site.py"),str(out)],check=True)
             entries=json.loads((out/"catalog.json").read_text())["packs"]
             for item in entries:
                 page=out/"docs"/item["id"]/"index.html"

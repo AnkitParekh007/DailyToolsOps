@@ -8,7 +8,7 @@ From this pack directory run:
 ```sh
 python3 install.py /absolute/path/to/project
 python3 install.py /absolute/path/to/project --apply
-``
+```
 Preview first; conflicts abort preflight. Run `python3 pack.py` to create the individual ZIP. From the resource repository root you can also use `python3 dailytools.py install postgresql --target /path/to/project --apply`.
 
 ## Use
