@@ -13,6 +13,110 @@
         "antigravity"
       ],
       "path": "packs/vendor-independent-harness"
+    },
+    {
+      "id": "context-engineering",
+      "version": "1.0.0",
+      "category": "foundations",
+      "description": "Persistent context and session recovery",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/foundations/context-engineering"
+    },
+    {
+      "id": "repository-intelligence",
+      "version": "1.0.0",
+      "category": "foundations",
+      "description": "Evidence-based repository inventory",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/foundations/repository-intelligence"
+    },
+    {
+      "id": "specification-driven-development",
+      "version": "1.0.0",
+      "category": "foundations",
+      "description": "Executable feature specifications",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/foundations/specification-driven-development"
+    },
+    {
+      "id": "production-readiness",
+      "version": "1.0.0",
+      "category": "quality-security",
+      "description": "Release readiness audit",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/quality-security/production-readiness"
+    },
+    {
+      "id": "code-review",
+      "version": "1.0.0",
+      "category": "quality-security",
+      "description": "Independent pull request review",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/quality-security/code-review"
+    },
+    {
+      "id": "security-engineering",
+      "version": "1.0.0",
+      "category": "quality-security",
+      "description": "Threat modeling and defensive audit",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/quality-security/security-engineering"
+    },
+    {
+      "id": "ui-ux-engineering",
+      "version": "1.0.0",
+      "category": "development",
+      "description": "Accessible responsive UI verification",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/development/ui-ux-engineering"
+    },
+    {
+      "id": "bug-investigation",
+      "version": "1.0.0",
+      "category": "development",
+      "description": "Reproduction and regression repair",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/development/bug-investigation"
     }
   ]
 }

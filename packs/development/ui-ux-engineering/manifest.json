@@ -1,0 +1,13 @@
+{
+  "id": "ui-ux-engineering",
+  "version": "1.0.0",
+  "category": "development",
+  "description": "Accessible responsive UI verification",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/development/ui-ux-engineering"
+}

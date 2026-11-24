@@ -1,0 +1,13 @@
+{
+  "id": "specification-driven-development",
+  "version": "1.0.0",
+  "category": "foundations",
+  "description": "Executable feature specifications",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/foundations/specification-driven-development"
+}

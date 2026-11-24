@@ -1,0 +1,13 @@
+{
+  "id": "production-readiness",
+  "version": "1.0.0",
+  "category": "quality-security",
+  "description": "Release readiness audit",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/quality-security/production-readiness"
+}

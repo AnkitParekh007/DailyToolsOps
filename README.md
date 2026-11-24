@@ -1,21 +1,24 @@
 # Daily Tools & Resources
 
-Vendor-independent engineering resources for Claude Code, Cursor, Codex and Antigravity.
+Vendor-independent engineering packs. Python 3.9+; preview-first installation. Most packs are guided templates, not automated services.
 
-| Pack | Version | Guide |
+| Pack | Category | Instructions |
 | --- | --- | --- |
-| [Vendor-independent harness](packs/vendor-independent-harness/) | 1.0.0 | [Instructions](packs/vendor-independent-harness/INSTRUCTIONS.md) |
+| [vendor-independent-harness](packs/vendor-independent-harness/) | foundations | [Usage](packs/vendor-independent-harness/INSTRUCTIONS.md) |
+| [context-engineering](packs/foundations/context-engineering/) | foundations | [Usage](packs/foundations/context-engineering/INSTRUCTIONS.md) |
+| [repository-intelligence](packs/foundations/repository-intelligence/) | foundations | [Usage](packs/foundations/repository-intelligence/INSTRUCTIONS.md) |
+| [specification-driven-development](packs/foundations/specification-driven-development/) | foundations | [Usage](packs/foundations/specification-driven-development/INSTRUCTIONS.md) |
+| [production-readiness](packs/quality-security/production-readiness/) | quality-security | [Usage](packs/quality-security/production-readiness/INSTRUCTIONS.md) |
+| [code-review](packs/quality-security/code-review/) | quality-security | [Usage](packs/quality-security/code-review/INSTRUCTIONS.md) |
+| [security-engineering](packs/quality-security/security-engineering/) | quality-security | [Usage](packs/quality-security/security-engineering/INSTRUCTIONS.md) |
+| [ui-ux-engineering](packs/development/ui-ux-engineering/) | development | [Usage](packs/development/ui-ux-engineering/INSTRUCTIONS.md) |
+| [bug-investigation](packs/development/bug-investigation/) | development | [Usage](packs/development/bug-investigation/INSTRUCTIONS.md) |
 
 ## Quick start
-Requires Python 3.9+. Clone the repository, then run:
 ```sh
 python3 dailytools.py list
-python3 dailytools.py info vendor-independent-harness
-python3 dailytools.py install vendor-independent-harness --target /path/to/project
-python3 dailytools.py install vendor-independent-harness --target /path/to/project --apply
-python3 dailytools.py download vendor-independent-harness
+python3 dailytools.py install context-engineering --target /path/to/project
+python3 dailytools.py install context-engineering --target /path/to/project --apply
+python3 dailytools.py download context-engineering
 ```
-Installation previews by default. Download builds a standalone ZIP and SHA-256 file locally in dist/. CI produces downloadable workflow artifacts. No remote release assets are published automatically. Review code before running. [Repository ZIP](https://github.com/AnkitParekh007/daily-tools-resources/archive/refs/heads/main.zip).
-
-## Contribute a pack
-Provide README.md, INSTRUCTIONS.md, VERSION, manifest.json, install.py and pack.py. Register in catalog.json. Run python3 dailytools.py validate and python3 -m unittest discover -s tests -v. Never overwrite project files or include secrets. See [roadmap](docs/ROADMAP.md).
+ZIP and checksum are generated locally. Review code before executing. [Roadmap](docs/ROADMAP.md).

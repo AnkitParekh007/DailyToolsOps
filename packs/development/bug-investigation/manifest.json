@@ -1,0 +1,13 @@
+{
+  "id": "bug-investigation",
+  "version": "1.0.0",
+  "category": "development",
+  "description": "Reproduction and regression repair",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/development/bug-investigation"
+}
