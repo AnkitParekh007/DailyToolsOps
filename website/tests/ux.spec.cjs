@@ -25,11 +25,22 @@ const assert = require("node:assert/strict");
   assert.equal(await page.locator(".card").count(),12);
   await page.locator("#category").selectOption("");
   await page.evaluate(()=>window.scrollTo(0,1000));
-  assert.ok(Math.abs((await page.locator(".sticky").boundingBox()).y)<2);
+  async function checkFloatingHeader(){
+    const card=page.locator(".sticky > .nav");
+    const box=await card.boundingBox();
+    const viewport=page.viewportSize();
+    assert.ok(box.x>=7 && box.x+box.width<=viewport.width-7,"floating card gutters");
+    const top=await page.locator(".sticky").evaluate(e=>parseFloat(getComputedStyle(e).top));
+    assert.ok(Math.abs(box.y-top)<2,"floating card sticky offset");
+    assert.ok(await card.evaluate(e=>parseFloat(getComputedStyle(e).borderRadius)>=12),"rounded navigation card");
+  }
+  await checkFloatingHeader();
   assert.equal(await page.locator(".coffee").getAttribute("href"),"https://buymeacoffee.com/ankitparekh");
   for(const width of [320,375,768,1024,1440]){
    await page.setViewportSize({width,height:900});
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"horizontal overflow at "+width);
+   await page.evaluate(()=>window.scrollTo(0,1000));
+   await checkFloatingHeader();
   }
   await page.setViewportSize({width:1440,height:900});
   const [all]=await Promise.all([page.waitForEvent("download"),page.locator("#all").click()]);
@@ -52,6 +63,9 @@ const assert = require("node:assert/strict");
   for(const width of [320,375,768,1024,1440]){
     await page.setViewportSize({width,height:900});
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"docs overflow at "+width);
+    await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));
+    const card=await page.locator(".sticky > .nav").boundingBox();
+    assert.ok(card.x>=7 && card.x+card.width<=width-7,"docs floating header gutters");
   }
   await page.screenshot({path:"ux-docs.png",fullPage:false});
   await page.goto("http://127.0.0.1:8000/");
