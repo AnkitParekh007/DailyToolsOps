@@ -117,6 +117,110 @@
         "antigravity"
       ],
       "path": "packs/development/bug-investigation"
+    },
+    {
+      "id": "agent-starter",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "Policy-gated agent reference design",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/agent-starter"
+    },
+    {
+      "id": "mcp-development",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "MCP tool contract design and testing",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/mcp-development"
+    },
+    {
+      "id": "rag-engineering",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "Retrieval design and evaluation",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/rag-engineering"
+    },
+    {
+      "id": "ai-guardrails",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "Deterministic action and output policies",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/ai-guardrails"
+    },
+    {
+      "id": "llm-evaluation",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "Golden datasets and regression evaluation",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/llm-evaluation"
+    },
+    {
+      "id": "ai-observability",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "Privacy-conscious agent tracing",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/ai-observability"
+    },
+    {
+      "id": "ai-cost-optimization",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "Usage budgets and cost controls",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/ai-cost-optimization"
+    },
+    {
+      "id": "agent-reliability",
+      "version": "1.0.0",
+      "category": "ai-engineering",
+      "description": "Bounded retries and recovery",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/ai-engineering/agent-reliability"
     }
   ]
 }

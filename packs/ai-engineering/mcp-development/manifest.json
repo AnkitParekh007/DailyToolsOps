@@ -1,0 +1,13 @@
+{
+  "id": "mcp-development",
+  "version": "1.0.0",
+  "category": "ai-engineering",
+  "description": "MCP tool contract design and testing",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/ai-engineering/mcp-development"
+}

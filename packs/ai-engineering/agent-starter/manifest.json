@@ -1,0 +1,13 @@
+{
+  "id": "agent-starter",
+  "version": "1.0.0",
+  "category": "ai-engineering",
+  "description": "Policy-gated agent reference design",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/ai-engineering/agent-starter"
+}
