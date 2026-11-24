@@ -9,6 +9,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import dailytools
+from build_docs import build_docs
 
 def build(out):
     out = Path(out).resolve()
@@ -37,6 +38,7 @@ def build(out):
         for rel in ("README.md", "catalog.json", "dailytools.py"):
             z.write(ROOT / rel, rel)
     bundle.with_suffix(".zip.sha256").write_text(hashlib.sha256(bundle.read_bytes()).hexdigest() + "  " + bundle.name + "\n", encoding="utf-8")
+    build_docs(ROOT, out, list(entries.values()))
     print("Built", len(entries), "packs at", out)
 
 if __name__ == "__main__":

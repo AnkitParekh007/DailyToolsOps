@@ -11,5 +11,5 @@ class RepositoryIdentityTests(unittest.TestCase):
                 content = path.read_text(encoding="utf-8")
                 self.assertNotIn("AnkitParekh007/" + "daily-tools-resources", content)
                 self.assertNotIn("ankitparekh007.github.io/" + "daily-tools-resources", content)
-        self.assertIn("https://github.com/AnkitParekh007/DailyToolsOps", (ROOT / "website/app.js").read_text(encoding="utf-8"))
+        self.assertIn("https://github.com/AnkitParekh007/DailyToolsOps", (ROOT / "website/index.html").read_text(encoding="utf-8"))
         self.assertIn("https://ankitparekh007.github.io/DailyToolsOps/", (ROOT / "README.md").read_text(encoding="utf-8"))
