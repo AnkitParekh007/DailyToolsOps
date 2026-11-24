@@ -1,0 +1,13 @@
+{
+  "id": "angular",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "Angular engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/angular"
+}

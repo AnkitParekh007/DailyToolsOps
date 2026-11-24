@@ -1,0 +1,13 @@
+{
+  "id": "python",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "Python engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/python"
+}

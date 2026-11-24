@@ -1,0 +1,13 @@
+{
+  "id": "react",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "React engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/react"
+}

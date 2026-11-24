@@ -1,0 +1,13 @@
+{
+  "id": "github-actions",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "GitHub Actions engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/github-actions"
+}

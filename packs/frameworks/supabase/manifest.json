@@ -1,0 +1,13 @@
+{
+  "id": "supabase",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "Supabase engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/supabase"
+}

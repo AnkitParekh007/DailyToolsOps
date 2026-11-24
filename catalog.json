@@ -299,6 +299,162 @@
         "antigravity"
       ],
       "path": "packs/development/documentation-engineering"
+    },
+    {
+      "id": "angular",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "Angular engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/angular"
+    },
+    {
+      "id": "react",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "React engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/react"
+    },
+    {
+      "id": "nextjs",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "Next.js engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/nextjs"
+    },
+    {
+      "id": "nodejs",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "Node.js engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/nodejs"
+    },
+    {
+      "id": "python",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "Python engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/python"
+    },
+    {
+      "id": "fastapi",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "FastAPI engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/fastapi"
+    },
+    {
+      "id": "swiftui",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "SwiftUI engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/swiftui"
+    },
+    {
+      "id": "tauri",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "Tauri engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/tauri"
+    },
+    {
+      "id": "postgresql",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "PostgreSQL engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/postgresql"
+    },
+    {
+      "id": "supabase",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "Supabase engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/supabase"
+    },
+    {
+      "id": "playwright",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "Playwright engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/playwright"
+    },
+    {
+      "id": "github-actions",
+      "version": "1.0.0",
+      "category": "frameworks",
+      "description": "GitHub Actions engineering checklist",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/frameworks/github-actions"
     }
   ]
 }
