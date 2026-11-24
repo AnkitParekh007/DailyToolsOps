@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "category",
+    "description",
+    "tools",
+    "path"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "claude-code",
+          "cursor",
+          "codex",
+          "antigravity"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^packs/[a-z0-9/-]+$"
+    }
+  },
+  "additionalProperties": false
+}
