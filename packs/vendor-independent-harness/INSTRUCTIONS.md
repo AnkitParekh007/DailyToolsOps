@@ -4,10 +4,10 @@
 Python 3.9+, Git and an existing project directory. No extra Python packages or API keys required. Start on a clean feature branch and back up existing changes.
 
 ## 2. Download
-Download the [repository ZIP](https://github.com/AnkitParekh007/daily-tools-resources/archive/refs/heads/main.zip) and extract this pack, or use:
+Download the [repository ZIP](https://github.com/AnkitParekh007/DailyToolsOps/archive/refs/heads/main.zip) and extract this pack, or use:
 ```bash
-git clone --filter=blob:none --sparse https://github.com/AnkitParekh007/daily-tools-resources.git
-cd daily-tools-resources
+git clone --filter=blob:none --sparse https://github.com/AnkitParekh007/DailyToolsOps.git
+cd DailyToolsOps
 git sparse-checkout set packs/vendor-independent-harness
 cd packs/vendor-independent-harness
 ```
