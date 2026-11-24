@@ -1,0 +1,31 @@
+name: Website UX browser audit
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false playwright@1.51.1
+      - run: npx playwright install --with-deps chromium
+      - run: python scripts/build_site.py _site
+      - run: |
+          python -m http.server 8000 --directory _site > /tmp/dailytools-http.log 2>&1 &
+          node website/tests/ux.spec.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ux-screenshots
+          path: ux-*.png
