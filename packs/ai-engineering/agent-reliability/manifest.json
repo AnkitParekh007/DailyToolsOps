@@ -1,0 +1,13 @@
+{
+  "id": "agent-reliability",
+  "version": "1.0.0",
+  "category": "ai-engineering",
+  "description": "Bounded retries and recovery",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/ai-engineering/agent-reliability"
+}

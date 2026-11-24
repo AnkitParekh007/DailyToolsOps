@@ -1,0 +1,13 @@
+{
+  "id": "ai-cost-optimization",
+  "version": "1.0.0",
+  "category": "ai-engineering",
+  "description": "Usage budgets and cost controls",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/ai-engineering/ai-cost-optimization"
+}

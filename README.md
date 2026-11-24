@@ -13,6 +13,14 @@ Vendor-independent engineering packs. Python 3.9+; preview-first installation. M
 | [security-engineering](packs/quality-security/security-engineering/) | quality-security | [Usage](packs/quality-security/security-engineering/INSTRUCTIONS.md) |
 | [ui-ux-engineering](packs/development/ui-ux-engineering/) | development | [Usage](packs/development/ui-ux-engineering/INSTRUCTIONS.md) |
 | [bug-investigation](packs/development/bug-investigation/) | development | [Usage](packs/development/bug-investigation/INSTRUCTIONS.md) |
+| [agent-starter](packs/ai-engineering/agent-starter/) | ai-engineering | [Usage](packs/ai-engineering/agent-starter/INSTRUCTIONS.md) |
+| [mcp-development](packs/ai-engineering/mcp-development/) | ai-engineering | [Usage](packs/ai-engineering/mcp-development/INSTRUCTIONS.md) |
+| [rag-engineering](packs/ai-engineering/rag-engineering/) | ai-engineering | [Usage](packs/ai-engineering/rag-engineering/INSTRUCTIONS.md) |
+| [ai-guardrails](packs/ai-engineering/ai-guardrails/) | ai-engineering | [Usage](packs/ai-engineering/ai-guardrails/INSTRUCTIONS.md) |
+| [llm-evaluation](packs/ai-engineering/llm-evaluation/) | ai-engineering | [Usage](packs/ai-engineering/llm-evaluation/INSTRUCTIONS.md) |
+| [ai-observability](packs/ai-engineering/ai-observability/) | ai-engineering | [Usage](packs/ai-engineering/ai-observability/INSTRUCTIONS.md) |
+| [ai-cost-optimization](packs/ai-engineering/ai-cost-optimization/) | ai-engineering | [Usage](packs/ai-engineering/ai-cost-optimization/INSTRUCTIONS.md) |
+| [agent-reliability](packs/ai-engineering/agent-reliability/) | ai-engineering | [Usage](packs/ai-engineering/agent-reliability/INSTRUCTIONS.md) |
 
 ## Quick start
 ```sh

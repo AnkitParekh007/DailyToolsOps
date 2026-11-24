@@ -1,0 +1,13 @@
+{
+  "id": "ai-observability",
+  "version": "1.0.0",
+  "category": "ai-engineering",
+  "description": "Privacy-conscious agent tracing",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/ai-engineering/ai-observability"
+}

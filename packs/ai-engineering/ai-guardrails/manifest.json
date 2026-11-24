@@ -1,0 +1,13 @@
+{
+  "id": "ai-guardrails",
+  "version": "1.0.0",
+  "category": "ai-engineering",
+  "description": "Deterministic action and output policies",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/ai-engineering/ai-guardrails"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "rag-engineering",
+  "version": "1.0.0",
+  "category": "ai-engineering",
+  "description": "Retrieval design and evaluation",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/ai-engineering/rag-engineering"
+}
