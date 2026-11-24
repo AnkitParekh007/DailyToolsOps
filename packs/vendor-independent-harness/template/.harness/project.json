@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "lint": null,
+    "typecheck": null,
+    "test": null,
+    "build": null,
+    "security": null
+  }
+}

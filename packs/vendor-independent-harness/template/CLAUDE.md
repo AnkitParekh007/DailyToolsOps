@@ -1,0 +1,3 @@
+# Shared harness
+
+@AGENTS.md

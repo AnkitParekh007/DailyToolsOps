@@ -1,0 +1,2 @@
+# Engineering instructions
+Read .harness/contract.md, architecture.md and task.md before editing. Inspect existing conventions and nested instructions. Use .harness/project.json for verification; never claim a skipped check passed. Run python3 .harness/verify.py before declaring completion. Report evidence and unresolved risks. Do not merge, deploy, alter permissions or access secrets without explicit authorization.
