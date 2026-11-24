@@ -11,7 +11,7 @@ Status as of 2026-11-24: 35 registered packs (23 core, 12 framework guides), mos
 - [ ] [#12](https://github.com/AnkitParekh007/DailyToolsOps/issues/12) Agent starter: offline reference implementation.
 - [ ] [#13](https://github.com/AnkitParekh007/DailyToolsOps/issues/13) Evaluation and guardrail utilities.
 - [ ] [#15](https://github.com/AnkitParekh007/DailyToolsOps/issues/15) Agent skills, prompt engineering, structured output.
-- [ ] [#16](https://github.com/AnkitParekh007/DailyToolsOps/issues/16) Multi-agent orchestration; runnable RAG/MCP examples.
+- [ ] [#16](https://github.com/AnkitParekh007/DailyToolsOps/issues/16) MCP security and multi-agent orchestration packs; runnable RAG/MCP examples.
 - [ ] [#24](https://github.com/AnkitParekh007/DailyToolsOps/issues/24) Observability, cost and reliability utilities.
 
 ## R3 — Daily software engineering (P1)
