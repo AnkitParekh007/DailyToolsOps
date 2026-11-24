@@ -1,0 +1,26 @@
+{
+  "description": "Vendor-independent AI engineering toolkit: downloadable resource packs, agent skills, harness and context engineering, workflows, and production engineering for Claude Code, Cursor, Codex and Antigravity.",
+  "homepage": "https://ankitparekh007.github.io/DailyToolsOps/",
+  "topics": [
+    "ai-engineering",
+    "agentic-ai",
+    "ai-agents",
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity",
+    "harness-engineering",
+    "context-engineering",
+    "prompt-engineering",
+    "agent-skills",
+    "mcp",
+    "rag",
+    "developer-tools",
+    "developer-productivity",
+    "software-architecture",
+    "devops",
+    "automation",
+    "code-review",
+    "ai-coding"
+  ]
+}

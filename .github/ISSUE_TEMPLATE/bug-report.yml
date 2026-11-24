@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible pack, CLI or website problem
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Pack and version or website URL
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce and environment
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or screenshots (redact secrets and personal data)

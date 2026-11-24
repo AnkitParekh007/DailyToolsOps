@@ -50,3 +50,7 @@ python3 dailytools.py install context-engineering --target /path/to/project --ap
 python3 dailytools.py download context-engineering
 ```
 ZIP and checksum are generated locally. Review code before executing. [Roadmap](docs/ROADMAP.md).
+
+## Project roadmap and contributions
+
+Explore the [resource expansion roadmap](docs/ROADMAP.md), browse [open issues](https://github.com/AnkitParekh007/DailyToolsOps/issues), or request a new pack using the issue templates. The catalog currently includes guided templates; executable utilities are tracked separately in the roadmap.
