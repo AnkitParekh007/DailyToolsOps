@@ -1,0 +1,13 @@
+{
+  "id": "nodejs",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "Node.js engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/nodejs"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "swiftui",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "SwiftUI engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/swiftui"
+}

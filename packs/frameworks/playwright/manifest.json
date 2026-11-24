@@ -1,0 +1,13 @@
+{
+  "id": "playwright",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "Playwright engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/playwright"
+}

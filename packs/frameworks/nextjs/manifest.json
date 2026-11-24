@@ -1,0 +1,13 @@
+{
+  "id": "nextjs",
+  "version": "1.0.0",
+  "category": "frameworks",
+  "description": "Next.js engineering checklist",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/frameworks/nextjs"
+}
