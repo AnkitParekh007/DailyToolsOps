@@ -1,0 +1,43 @@
+name: React migration validation
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  react:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: web-react
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+      - run: npm test
+      - run: npx playwright install --with-deps chromium
+      - run: |
+          npm run preview -- --port 4173 --strictPort > /tmp/react-preview.log 2>&1 &
+          pid=$!
+          trap 'kill "$pid" 2>/dev/null || true; cat /tmp/react-preview.log' EXIT
+          ready=false
+          for i in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:4173/DailyToolsOps/ >/dev/null; then ready=true; break; fi
+            sleep 1
+          done
+          test "$ready" = true
+          node tests/ux.spec.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: react-ux-screenshots
+          path: web-react/ux-*.png

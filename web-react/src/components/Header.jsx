@@ -1,0 +1,8 @@
+import React,{useEffect,useState} from 'react';
+import {Link,useLocation} from 'react-router-dom';
+import {Icon} from './Icon';
+import {REPO} from '../data/site';
+const modes=[['auto','monitor','System'],['light','sun','Light'],['dark','moon','Dark']];
+export function Header(){const {pathname}=useLocation();const docs=pathname.startsWith('/docs');const [theme,setTheme]=useState('auto');useEffect(()=>{try{const saved=localStorage.getItem('dailytools-theme');if(modes.some(([m])=>m===saved))setTheme(saved);}catch{}},[]);useEffect(()=>{document.documentElement.dataset.theme=theme;},[theme]);function change(mode){setTheme(mode);try{localStorage.setItem('dailytools-theme',mode);}catch{}}
+ return <header className="sticky"><div className="shell nav"><Link className="brand" to="/"><span className="mark"><Icon name="terminal"/></span> DailyToolsOps<span className="accent">.</span></Link><nav aria-label="Main navigation"><Link to="/#catalog"><Icon name="layers"/> Resources</Link><Link to="/docs/" aria-current={docs?'page':undefined}><Icon name="book"/> Docs</Link><Link className="nav-support" to="/#support"><Icon name="heart"/> Support</Link><a href={REPO} aria-label="GitHub repository" rel="noopener noreferrer"><Icon name="github"/> <span className="nav-github">GitHub</span></a></nav><div className="themes" role="group" aria-label="Color theme">{modes.map(([mode,icon,label])=><button key={mode} type="button" data-mode={mode} aria-label={label+' theme'} title={label+' theme'} aria-pressed={theme===mode} onClick={()=>change(mode)}><Icon name={icon}/></button>)}</div></div></header>;
+}
