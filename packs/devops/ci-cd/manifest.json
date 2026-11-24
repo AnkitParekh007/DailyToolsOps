@@ -1,0 +1,13 @@
+{
+  "id": "ci-cd",
+  "version": "1.0.0",
+  "category": "devops",
+  "description": "Least-privilege CI/CD design",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/devops/ci-cd"
+}

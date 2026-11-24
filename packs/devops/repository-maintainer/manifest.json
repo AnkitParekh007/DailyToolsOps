@@ -1,0 +1,13 @@
+{
+  "id": "repository-maintainer",
+  "version": "1.0.0",
+  "category": "devops",
+  "description": "Scheduled audit and controlled remediation playbook",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/devops/repository-maintainer"
+}

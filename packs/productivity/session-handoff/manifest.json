@@ -1,0 +1,13 @@
+{
+  "id": "session-handoff",
+  "version": "1.0.0",
+  "category": "productivity",
+  "description": "Cross-agent handoff contract",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/productivity/session-handoff"
+}

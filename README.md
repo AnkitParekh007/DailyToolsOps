@@ -21,6 +21,12 @@ Vendor-independent engineering packs. Python 3.9+; preview-first installation. M
 | [ai-observability](packs/ai-engineering/ai-observability/) | ai-engineering | [Usage](packs/ai-engineering/ai-observability/INSTRUCTIONS.md) |
 | [ai-cost-optimization](packs/ai-engineering/ai-cost-optimization/) | ai-engineering | [Usage](packs/ai-engineering/ai-cost-optimization/INSTRUCTIONS.md) |
 | [agent-reliability](packs/ai-engineering/agent-reliability/) | ai-engineering | [Usage](packs/ai-engineering/agent-reliability/INSTRUCTIONS.md) |
+| [repository-maintainer](packs/devops/repository-maintainer/) | devops | [Usage](packs/devops/repository-maintainer/INSTRUCTIONS.md) |
+| [technology-intelligence](packs/devops/technology-intelligence/) | devops | [Usage](packs/devops/technology-intelligence/INSTRUCTIONS.md) |
+| [ci-cd](packs/devops/ci-cd/) | devops | [Usage](packs/devops/ci-cd/INSTRUCTIONS.md) |
+| [release-engineering](packs/devops/release-engineering/) | devops | [Usage](packs/devops/release-engineering/INSTRUCTIONS.md) |
+| [session-handoff](packs/productivity/session-handoff/) | productivity | [Usage](packs/productivity/session-handoff/INSTRUCTIONS.md) |
+| [documentation-engineering](packs/development/documentation-engineering/) | development | [Usage](packs/development/documentation-engineering/INSTRUCTIONS.md) |
 
 ## Quick start
 ```sh
