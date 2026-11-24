@@ -1,0 +1,13 @@
+{
+  "id": "code-review",
+  "version": "1.0.0",
+  "category": "quality-security",
+  "description": "Independent pull request review",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/quality-security/code-review"
+}

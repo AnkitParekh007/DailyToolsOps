@@ -1,0 +1,13 @@
+{
+  "id": "repository-intelligence",
+  "version": "1.0.0",
+  "category": "foundations",
+  "description": "Evidence-based repository inventory",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/foundations/repository-intelligence"
+}

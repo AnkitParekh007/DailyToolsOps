@@ -1,0 +1,13 @@
+{
+  "id": "security-engineering",
+  "version": "1.0.0",
+  "category": "quality-security",
+  "description": "Threat modeling and defensive audit",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/quality-security/security-engineering"
+}

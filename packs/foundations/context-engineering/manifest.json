@@ -1,0 +1,13 @@
+{
+  "id": "context-engineering",
+  "version": "1.0.0",
+  "category": "foundations",
+  "description": "Persistent context and session recovery",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/foundations/context-engineering"
+}
