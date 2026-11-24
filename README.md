@@ -1,6 +1,6 @@
 # DailyToolsOps
 
-[Visit the website](https://ankitparekh007.github.io/DailyToolsOps/) · [Download all packs](https://ankitparekh007.github.io/DailyToolsOps/downloads/dailytools-all.zip)
+[Read documentation](https://ankitparekh007.github.io/DailyToolsOps/docs/) · [Visit the website](https://ankitparekh007.github.io/DailyToolsOps/) · [Download all packs](https://ankitparekh007.github.io/DailyToolsOps/downloads/dailytools-all.zip)
 
 Vendor-independent engineering packs. Python 3.9+; preview-first installation. Most packs are guided templates, not automated services.
 

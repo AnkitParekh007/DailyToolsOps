@@ -34,6 +34,28 @@ const assert = require("node:assert/strict");
   await page.setViewportSize({width:1440,height:900});
   const [all]=await Promise.all([page.waitForEvent("download"),page.locator("#all").click()]);
   assert.equal(all.suggestedFilename(),"dailytools-all.zip");
+  await page.getByRole("searchbox").fill("context-engineering");
+  await page.locator(".card").getByRole("link",{name:"Instructions"}).click();
+  await page.waitForURL("**/docs/context-engineering/");
+  assert.equal(await page.locator("h1").textContent(),"Context Engineering");
+  assert.equal(await page.locator(".doc-body h2").first().textContent(),"Prerequisites");
+  assert.equal(await page.locator("html").getAttribute("data-theme"),"light");
+  await page.locator("#docs-search").fill("vendor-independent-harness");
+  await page.locator(".docs-links").getByRole("link",{name:"Vendor Independent Harness",exact:true}).click();
+  await page.waitForURL("**/docs/vendor-independent-harness/");
+  assert.ok(await page.locator(".doc-body table").count()>0);
+  const [docDownload]=await Promise.all([page.waitForEvent("download"),page.getByRole("link",{name:"Download ZIP",exact:true}).click()]);
+  assert.match(docDownload.suggestedFilename(),/vendor-independent-harness.*\.zip$/);
+  await page.getByRole("link",{name:"prompts.md",exact:true}).click();
+  await page.waitForURL("**/docs/vendor-independent-harness/prompts/");
+  assert.equal(await page.locator("h1").textContent(),"Prompts");
+  for(const width of [320,375,768,1024,1440]){
+    await page.setViewportSize({width,height:900});
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),"docs overflow at "+width);
+  }
+  await page.screenshot({path:"ux-docs.png",fullPage:false});
+  await page.goto("http://127.0.0.1:8000/");
+  await page.locator(".card").first().waitFor();
   assert.deepEqual(errors,[]);
   await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:"ux-desktop.png",fullPage:false});
   await page.setViewportSize({width:375,height:812});await page.screenshot({path:"ux-mobile.png",fullPage:false});
