@@ -1,0 +1,13 @@
+{
+  "id": "technology-intelligence",
+  "version": "1.0.0",
+  "category": "devops",
+  "description": "Evidence-based upstream trend review",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/devops/technology-intelligence"
+}

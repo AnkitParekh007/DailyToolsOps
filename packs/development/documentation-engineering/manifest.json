@@ -1,0 +1,13 @@
+{
+  "id": "documentation-engineering",
+  "version": "1.0.0",
+  "category": "development",
+  "description": "Documentation freshness and accuracy",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/development/documentation-engineering"
+}

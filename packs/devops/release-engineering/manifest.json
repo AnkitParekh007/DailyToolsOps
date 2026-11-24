@@ -1,0 +1,13 @@
+{
+  "id": "release-engineering",
+  "version": "1.0.0",
+  "category": "devops",
+  "description": "Versioned release evidence and rollback",
+  "tools": [
+    "claude-code",
+    "cursor",
+    "codex",
+    "antigravity"
+  ],
+  "path": "packs/devops/release-engineering"
+}

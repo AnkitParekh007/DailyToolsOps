@@ -221,6 +221,84 @@
         "antigravity"
       ],
       "path": "packs/ai-engineering/agent-reliability"
+    },
+    {
+      "id": "repository-maintainer",
+      "version": "1.0.0",
+      "category": "devops",
+      "description": "Scheduled audit and controlled remediation playbook",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/devops/repository-maintainer"
+    },
+    {
+      "id": "technology-intelligence",
+      "version": "1.0.0",
+      "category": "devops",
+      "description": "Evidence-based upstream trend review",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/devops/technology-intelligence"
+    },
+    {
+      "id": "ci-cd",
+      "version": "1.0.0",
+      "category": "devops",
+      "description": "Least-privilege CI/CD design",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/devops/ci-cd"
+    },
+    {
+      "id": "release-engineering",
+      "version": "1.0.0",
+      "category": "devops",
+      "description": "Versioned release evidence and rollback",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/devops/release-engineering"
+    },
+    {
+      "id": "session-handoff",
+      "version": "1.0.0",
+      "category": "productivity",
+      "description": "Cross-agent handoff contract",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/productivity/session-handoff"
+    },
+    {
+      "id": "documentation-engineering",
+      "version": "1.0.0",
+      "category": "development",
+      "description": "Documentation freshness and accuracy",
+      "tools": [
+        "claude-code",
+        "cursor",
+        "codex",
+        "antigravity"
+      ],
+      "path": "packs/development/documentation-engineering"
     }
   ]
 }
